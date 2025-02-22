@@ -47,23 +47,9 @@ The [slides](https://aka.ms/AAryyth) have presenter notes in each part of the se
 
 ## Deployment / Preparation
 
-[Instructions and prerequisites are outlined here](https://github.com/Azure-Samples/contoso-creative-writer/tree/trustworthy-ai-demo?tab=readme-ov-file#vs-code-dev-containers). 
+[Instructions and prerequisites are outlined here](https://github.com/Azure-Samples/contoso-creative-writer/tree/main).
 
-**Only** use the **trustworthy-ai-demo** branch. Deploying locally is recommended as multiple people have consistently encountered errors or quota issues when deploying via GitHub Codespaces. When deploying in VS Code, ensure that you are on the **trusthworthy-ai-demo** branch as it does not default to that branch. You should **only** use the **Sweden Central** region for this sample. For this session, only complete the **Getting Started**, **Deployment**, **Testing the Sample**, and **Evaluating Results** sections.
-
-Prior to testing the sample or running evaluation results, you will need to modify the `azure_deployment` listed in the following agent promptys (located at `src/api/agents`):
-
-- writer
-- researcher
-- product
-
-The `azure_deployment` should be `gpt-4o` given that `gpt-4o-mini` is not a valid deployment name in this sample. You're welcome to manually execute a `gpt-4o-mini` deployment for a faster demo experience, however `gpt-4o` will suffice. Please note that `azd up` will **not** deploy a `gpt-4o-mini` deployment for you.
-
-Evaluations can take anywhere from 3 mins - 30 mins. Therefore, it's suggested to have already completed the evaluation runs **prior** to starting the session. The current dataset includes 11 text inputs and 8 images. You can trim the number of examples to 3 text and 2 images for a shorter run time.
-
-For text evaluation, remove rows in `src/api/evaluate/eval_inputs.jsonl`.
-
-For images evaluation, update `/src/api/evaluate/evaluate.py`, to `range(1,4)` for the line `for image_num in range(1, 9):` (currently line 458).
+Evaluations can take anywhere from 3 mins - 30 mins. Therefore, it's suggested to have already completed the evaluation runs **prior** to starting the session.
 
 ## Demos
 
@@ -89,3 +75,4 @@ Here is a log of the changes made to this file:
 | 2024.09.16 | Added Change log, Additional language section with *coming soon* notice |
 | 2024.11.27 | Updated Session Delivery Resources README.md |
 | 2024.12.02 | Add links to demos and slide deck |
+| 2025.02.21 | Switch deployment instructions to Main and update required quota |

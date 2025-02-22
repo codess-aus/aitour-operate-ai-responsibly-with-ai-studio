@@ -18,16 +18,15 @@ New challenges and threats are emerging as AI evolves. Learn how Azure AI’s ad
 - [Azure AI Evaluation SDK](https://learn.microsoft.com/azure/ai-studio/how-to/develop/flow-evaluate-sdk)
 - [Prompty](https://prompty.ai/)
 - [Azure App Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview)
-- [Github Actions](https://docs.github.com/actions)
+- [GitHub Actions](https://docs.github.com/actions)
 
 ## Required Quota
 
 | Model Name            | Model Version | SKU Name         | Capacity |
 |------------------------|--------------|------------------------|---------------|
-| gpt-35-turbo          | 1106          | Standard         | 20       |
-| text-embedding-ada-002| 2             | Standard         | 20       |
-| gpt-4o                | 2024-05-13    | GlobalStandard   | 20       |
-| gpt-4                 | 0613          | Standard         | 10       |
+| text-embedding-ada-002| 2             | Standard         | 20K       |
+| gpt-4o                | 2024-05-13    | GlobalStandard   | 80K       |
+| gpt-4o-mini           | 2024-07-18    | Standard         | 50K       |
 
 ## Additional Resources and Continued Learning
 
